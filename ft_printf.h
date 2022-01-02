@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/24 13:55:14 by kadjane           #+#    #+#             */
-/*   Updated: 2021/12/24 16:28:48 by kadjane          ###   ########.fr       */
+/*   Updated: 2022/01/02 22:43:54 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,11 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include <stdlib.h>
-int	ft_strlen(char *str);
-void	ft_putstr(char *str);
+
+void    ft_putstr(char *str, int *count);
 void	ft_putchar(char	c);
-char *ft_itoa(int n);
+void	ft_putnbr_base(unsigned long int n, char format, int *c);
+void    ft_write(char c,int *count);
+void    ft_putunbr_base(long n, int *count);
 
 #endif
